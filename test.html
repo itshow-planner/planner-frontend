@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>planner</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="css/join.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: "Malgun Gothic";
+            font-size: 0.8em;
+
+        }
+        /*TAB CSS*/
+        ul.tabs {
+            margin: 0;
+            padding: 0;
+            float: left;
+            list-style: none;
+            height: 32px;
+            /*--Set height of tabs--*/
+            border-bottom: 1px solid #999;
+            border-left: 1px solid #999;
+            width: 100%;
+        }
+
+        ul.tabs li {
+            float: left;
+            margin: 0;
+            padding: 0;
+            height: 31px;
+            /*--Subtract 1px from the height of the unordered list--*/
+            line-height: 31px;
+            /*--Vertically aligns the text within the tab--*/
+            border: 1px solid #999;
+            border-left: none;
+            margin-bottom: -1px;
+            /*--Pull the list item down 1px--*/
+            overflow: hidden;
+            position: relative;
+            background: #e0e0e0;
+        }
+
+        ul.tabs li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            font-size: 1.2em;
+            padding: 0 20px;
+            /*--Gives the bevel look with a 1px white border inside the list item--*/
+            border: 1px solid #fff;
+            outline: none;
+        }
+
+        ul.tabs li a:hover {
+            background: #ccc;
+        }
+
+        html ul.tabs li.active,
+        html ul.tabs li.active a:hover {
+            /*--Makes sure that the active tab does not listen to the hover properties--*/
+            background: #fff;
+            /*--Makes the active tab look like it's connected with its content--*/
+            border-bottom: 1px solid #fff;
+        }
+
+        /*Tab Conent CSS*/
+
+        .tab_container {
+            border: 1px solid #999;
+            /*탭 페이지 왼쪽 아래 오른쪽 */
+            border-top: none;
+            overflow: hidden;
+            clear: both;
+            float: left;
+            width: 100%;
+            background: #fff;
+        }
+
+        .tab_content {
+            padding: 20px;
+            /*컨테이너 크기 */
+            font-size: 1.2em;
+        }
+    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">$(document).ready(function () {
+
+            //When page loads...
+            $(".tab_content").hide(); //Hide all content
+            $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show(); //Show first tab content
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".tab_content").hide(); //Hide all tab content
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active ID content
+                return false;
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-bright">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo1.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calnder.html">달력</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">일기</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" class="login" href="login.html">로그인</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="join" href="join.html">회원가입</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <!--탭 메뉴 영역 -->
+        <ul class="tabs">
+            <li>
+                <a href="#tab1">tab1</a>
+            </li>
+            <li>
+                <a href="#tab2">tab2</a>
+            </li>
+        </ul>
+
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+                <h1>tab1영역</h1>
+                내용 내용 내용 내용 내용 내용
+                <br/> 자바킹 블로그 :
+                <a href="http://javaking75.blog.me">javaking75.blog.me</a>
+
+            </div>
+
+            <div id="tab2" class="tab_content">
+                <!--Content-->
+                <h1>tab2영역</h1>
+                내용 내용 내용 내용 내용 내용
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
