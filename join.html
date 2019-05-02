@@ -16,7 +16,8 @@
         <a class="navbar-brand" href="index.html">
             <img src="img/logo1.png">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -41,6 +42,47 @@
             </ul>
         </div>
     </nav>
+    <form class="joinform">
+        <div class="all">
+            <div>
+                이름 <input type="text" id="namearea"><br>
+            </div>
+
+            <div>
+                아이디 <input type="text" id="idarea" required placeholder="&nbsp;특수문자, 한글 입력 불가능"><br>
+            </div>
+
+            <div>
+                비밀번호 <input type="password" id="pwd" required><br> 
+            </div>
+
+            <div>
+                비밀번호 확인 <input type="password" id="pwdcheck" required>
+                <input type="button" value="확인하기" id="pwdcheckbtn"><br>  
+            </div>
+
+            <div>
+                <select>
+                    <option>아버지 성함은 ?</option>
+                    <option>어머니 성함은 ?</option>
+                    <option>가장 기억에 남는 장소는 ?</option>
+                    <option>가장 좋아하는 음식은 ?</option>
+                    <option>가장 좋아하는 색깔은 ?</option>
+                    <option>가장 좋아하는 노래는 ?</option>
+                    <option>가장 좋아하는 책 이름은 ?</option>
+                    <option>가장 좋아하는 나라 이름은 ?</option>
+                    <option>출신 중학교는 ?</option>
+                    <option>태어난 곳은?</option>
+                </select>
+                <input type="text" id="answer"><br>
+            </div>
+            <div>
+                <input type="submit" value="회원가입" id="joinbtn">
+                <input type="reset" value="최소하기"="resetbtn">
+            </div>
+        </div>
+
+    </form>
 </body>
 
 </html>

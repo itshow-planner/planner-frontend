@@ -1,9 +1,11 @@
 *, ::after, ::before {
     box-sizing: inherit;
     font-family: 'Nanum Gothic', sans-serif;
-    background-color: rgb(251, 253, 251);
+    background-color: rgb(255, 255, 255);
 }
-
+nav{
+    border-bottom: 1px solid rgb(189, 188, 188);
+}
 ul {
     list-style: none;
     margin: 0;
@@ -22,3 +24,37 @@ li {
 .nav-link {
     margin: 0px 5px 0px 5px;
 }
+
+/* joinform 위치 설정 */
+.joinform{
+    position: relative;
+    transform: translate(36%, 45%);
+}
+
+.all{
+    color: rgb(70, 68, 68);
+    font-size: 17px;
+}
+
+/* 폼 - 이름 */
+
+#namearea{
+    width: 180px;
+    height: 35px;
+    margin: 0 0 0 5%;
+    margin-bottom: 1%; 
+    background-color: white;
+    border: 1px solid #aaa8a8;
+}
+
+#idarea{
+    width: 210px;
+    height: 35px;
+    margin: 0 0 0 4%;
+    margin-bottom: 1%; 
+    background-color: white;
+    border: 1px solid #aaa8a8;
+}
+
+
+
