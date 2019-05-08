@@ -44,3 +44,103 @@ li {
 .nav-link {
     margin: 0px 5px 0px 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-section--bg-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  /* backgrounds */
+  /* .cd-section:nth-child(1) {
+    background-image: url("../img/1.jpg");
+  }
+  
+  .cd-section:nth-child(2) {
+    background-color: var(--cd-color-2);
+  }
+  
+  .cd-section:nth-child(3) {
+    background-image: url("../img/2.jpg");
+  } */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  html,body {
+    height: 100%;
+    margin: 0
+  }
+  
+  .hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden; 
+    /* added for pseudo-element */
+  }
+  
+    /* fixed-position background image */
+    ::before {
+      background-image: url("../img/2.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      will-change: transform;
+      z-index: -1;
+    }
+  
+  h1 {
+    color: white;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    background: white;
+    padding: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5em;
+  }
