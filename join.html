@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>planner</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="css/join.css">
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -44,47 +46,62 @@
     </nav>
     <span>회원가입</span>
     <form class="joinform">
-        <div class="all">
-            <div>
-                이름 <input type="text" id="namearea"><br>
+        <tr>
+            <div class="all">
+                <td>
+                    <div>
+                        이름<input type="text" id="namearea" required><br>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        아이디<input type="text" id="idarea" required placeholder="&nbsp;특수문자, 한글 입력 불가능"><br>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        비밀번호<input type="password" id="pwdarea" required><br>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        비밀번호 확인
+                        <input type="password" id="pwdcheck" required>
+                        <input type="button" value="확인하기" id="pwdcheckbtn"><br>
+                    </div>
+                </td>
+                <td>
+                    <div class="select_bttom">
+                        질문 (택1)
+                        <select>
+                            <option>가장 기억에 남는 장소는 ?</option>
+                            <option>가장 좋아하는 음식은 ?</option>
+                            <option>가장 좋아하는 색깔은 ?</option>
+                            <option>가장 좋아하는 노래는 ?</option>
+                            <option>가장 좋아하는 책 이름은 ?</option>
+                            <option>가장 좋아하는 나라 이름은 ?</option>
+                            <option>아버지 성함은 ?</option>
+                            <option>어머니 성함은 ?</option>
+                            <option>출신 중학교는 ?</option>
+                            <option>태어난 곳은?</option>
+                        </select><br>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="text" id="answerarea" required placeholder="한 가지만 작성"><br>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <input type="reset" value="최소하기" id="resetbtn">
+                        <input type="submit" value="회원가입" id="joinbtn">
+                    </div>
+                </td>
             </div>
-
-            <div>
-                아이디 <input type="text" id="idarea" required placeholder="&nbsp;특수문자, 한글 입력 불가능"><br>
-            </div>
-
-            <div>
-                비밀번호 <input type="password" id="pwdarea" required><br> 
-            </div>
-
-            <div>
-                비밀번호 확인 <input type="password" id="pwdcheck" required>
-                <input type="button" value="확인하기" id="pwdcheckbtn"><br>  
-            </div>
-
-            <div class="select_bttom">
-                질문 (택1)
-                <select>
-                    <option>가장 기억에 남는 장소는 ?</option>
-                    <option>가장 좋아하는 음식은 ?</option>
-                    <option>가장 좋아하는 색깔은 ?</option>
-                    <option>가장 좋아하는 노래는 ?</option>
-                    <option>가장 좋아하는 책 이름은 ?</option>
-                    <option>가장 좋아하는 나라 이름은 ?</option>
-                    <option>아버지 성함은 ?</option>
-                    <option>어머니 성함은 ?</option>
-                    <option>출신 중학교는 ?</option>
-                    <option>태어난 곳은?</option>
-                </select>
-                <br>
-                <input type="text" id="answerarea" required placeholder="한 가지만 작성"><br>
-            </div>
-            <div>
-                <input type="reset" value="최소하기" id="resetbtn">
-                <input type="submit" value="회원가입" id="joinbtn">
-            </div>
-        </div>
+        </tr>
     </form>
+    <script src="js/join.js"></script>
 </body>
 
 </html>
