@@ -1,0 +1,152 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+}
+
+.container{
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#diaryList{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#diaryList li{
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+#diaryList li:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#canvasToolBar{
+    width: 30px;
+    height: 300px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#canvasToolBar li{
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#brush, #eraser, #plus, #minus{
+    width: 30px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+#plus:hover, #minus:hover{
+    background-color: rgb(78, 77, 77);
+}
+
+#colorpicker{
+    width: 25px;
+}
+
+#addDiary{
+    right: 10%;
+    bottom: 10%;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+}
+
+#addDiary:hover{
+    cursor: pointer;
+}
+
+#user_img{
+    width: 385px; 
+    height: 300px;
+}
+
+#addImg{
+    margin-left: 20px;
+    z-index: -1;
+}
+
+textarea{
+    width: 385px;
+    height: 238px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); */
+    line-height: 31px;
+    font-family: Arial, Helvetica, Sans-serif;
+    padding: 8px;
+} 
+
+.parent{
+    position: relative;
+    width: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.son1{
+    position: absolute;
+    top: 50px;
+    left: 92px;
+}
+
+.son2{
+    position: absolute;
+    top: 50px;
+    left: 449px;
+}
+
+.son3{
+    position: absolute;
+    top: 374px;
+    left: 92px;
+}
+
+.son4{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#canvas{
+    width: 355px; 
+    /* 최대 385px까지 */
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 350px;
+    height: 30px;
+    border: none;
+    background-color: rgb(240, 228, 252);
+}
+
+#submit:hover{
+    background-color: rgb(230, 203, 255);
+    cursor: pointer;
+}

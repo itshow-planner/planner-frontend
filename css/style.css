@@ -1,14 +1,7 @@
-*,::after,::before {
+*, ::after, ::before {
     box-sizing: inherit;
     font-family: 'Nanum Gothic', sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(251, 253, 251);
 }
 
 .carousel img {
@@ -16,12 +9,12 @@ html * {
     height: 660px;
     float: center;
     margin-bottom: 50px;
-}
-
-#footerHr {
+  }
+  
+#footerHr{
     height: 80px;
     width: 0px;
-    border-right: 1px solid rgb(255, 255, 255);
+    border-right:1px solid rgb(255, 255, 255);
 }
 
 #footer {
@@ -45,184 +38,109 @@ li {
     padding: 0;
     float: left;
     font-size: 13px;
-    color: black;
+    color: black;  
 }
 
 .nav-link {
     margin: 0px 5px 0px 5px;
 }
 
-nav{
-  background-color: rgba(255, 255, 255, 90%);
-  margin-bottom: 1%;
-}
 
-body {
-  font-size: 100%;
-  font-family: "Roboto", sans-serif;
-  color: #3d3536;
-  background-color: white;
-}
 
-html,
-body {
-    height: 115%;
+
+
+
+
+
+
+
+
+
+
+/* .cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-section--bg-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  /* backgrounds */
+  /* .cd-section:nth-child(1) {
+    background-image: url("../img/1.jpg");
+  }
+  
+  .cd-section:nth-child(2) {
+    background-color: var(--cd-color-2);
+  }
+  
+  .cd-section:nth-child(3) {
+    background-image: url("../img/2.jpg");
+  } */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  html,body {
+    height: 100%;
     margin: 0
-}
-
-.hero {
+  }
+  
+  .hero {
     align-items: center;
     display: flex;
     justify-content: center;
     min-height: 100%;
     position: relative;
-    overflow: hidden;
-}
-
-::before {
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    content: '';
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    will-change: transform;
-    z-index: -1;
-}
-
-h1 {
+    overflow: hidden; 
+    /* added for pseudo-element */
+  }
+  
+    /* fixed-position background image */
+    ::before {
+      background-image: url("../img/2.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      will-change: transform;
+      z-index: -1;
+    }
+  
+  h1 {
     color: white;
     font-size: 4em;
     text-transform: uppercase;
-}
-
-.content {
+  }
+  
+  .content {
     background: white;
     padding: 20px;
-}
-
-.content p {
+  }
+  
+  .content p {
     font-size: 1.5em;
-}
-
-/* 추가 중요부분 */
-.cd-container {
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto;
-}
-
-.cd-container::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.cd-main-content {
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.cd-fixed-bg {
-  position: relative;
-  min-height: 75%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-}
-
-.cd-fixed-bg h1,
-.cd-fixed-bg h2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
-}
-
-.cd-fixed-bg.cd-bg-1 {
-  background-image: url("https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/59722081_1167974543381502_1406914256900718592_o.jpg?_nc_cat=105&_nc_eui2=AeF91XakmPF7ClI95fLw1JJk8_f51q2WID37q2zND_xIxCcmVUWVMLTco5klwEI6A25oDQqv468hyzqopM1pK4VNvDZHi8Rew0iVfyLuRniiTg&_nc_ht=scontent-icn1-1.xx&oh=d274f09d8df0efa8c53b916a3194593f&oe=5D5E6F03");
-}
-
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg02.jpg");
-}
-
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg03.jpg");
-}
-
-.cd-fixed-bg.cd-bg-4 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg04.jpg");
-}
-
-@media only screen and (min-width: 320px) {
-
-  .cd-fixed-bg h1,
-  .cd-fixed-bg h2 {
-      font-size: 36px;
   }
-}
-
-@media only screen and (min-width: 480px) {
-  .cd-fixed-bg {
-      background-attachment: fixed;
-  }
-
-  .cd-fixed-bg h1,
-  .cd-fixed-bg h2 {
-      font-size: 48px;
-      font-weight: 300;
-  }
-}
-
-.cd-scrolling-bg {
-  position: relative;
-  min-height: 50%;
-  padding: 4em 0;
-  line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-.cd-scrolling-bg.cd-color-1 {
-  background-color: #52282d;
-  color: #a6989a;
-}
-
-.cd-scrolling-bg.cd-color-2 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-
-.cd-scrolling-bg.cd-color-3 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-
-@media only screen and (min-width: 480px) {
-  .cd-scrolling-bg {
-      padding: 8em 0;
-      font-size: 20px;
-      font-size: 1.25rem;
-      line-height: 2;
-      font-weight: 300;
-  }
-}
