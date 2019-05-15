@@ -214,7 +214,7 @@ temporary rendered events).
   /* re-scope all positions */
   width: 100%;
   /* hack to force re-sizing this inner element when scrollbars appear/disappear */ }
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 /* Global Event Styles
 --------------------------------------------------------------------------------------------------*/
 .fc-event {
@@ -222,8 +222,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
   /* for resize handle  and other inner positioning */
   display: block;
   /* make the <a> tag block */
-xxxxxxxxxxxxxxxxxxxxxx  text-decoration: none;
-  /* if <a> has an href */ }xxxxxxxxxxxxxxx
+  text-decoration: none;
+  /* if <a> has an href */ }
 
 .fc-event[href],
 .fc-event.fc-draggable {
