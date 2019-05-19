@@ -69,8 +69,9 @@ a {
   color: #a6989a;
 }
 .cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
+  /* 이 클래스는 적용되는 요소에 최대 너비를 부여하고, 최대 너비에 도달할 때 수평으로 중심을 잡는데 사용된다. */
+  /* width: 90%; */
+  width: 100%;
   max-width: 768px;
   margin: 0 auto;
 }
@@ -82,15 +83,15 @@ a {
 }
 
 .cd-main-content {
-  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  /* 자식에게 메인 콘텐츠 최소 높이를 할당해야 한다.*/
   height: 100%;
   position: relative;
   z-index: 1;
 }
 
-.cd-fixed-bg {
+.cd-fixed-bg {/* 사진 관련된 부분을 정하는 곳 */
   position: relative;
-  min-height: 75%;
+  min-height: 100%; 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -118,27 +119,38 @@ a {
 .cd-fixed-bg.cd-bg-1 {
   background-image: url("../img/c1.jpg");
 }
+
+/* +++ 메인 사진 div */
+.cd-fixed-bg.cd-bg-1_1 {
+  background-image: url("../img/2.jpg");
+}
+
 .cd-fixed-bg.cd-bg-2 {
   background-image: url("../img/c2.jpg");
 }
+
 .cd-fixed-bg.cd-bg-3 {
   background-image: url("../img/c3.jpg");
 }
+
 .cd-fixed-bg.cd-bg-4 {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/181085/track_riders_bg04.jpg");
+  background-image: url("../img/2.jpg");
 }
+
 @media only screen and (min-width: 320px) {
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
     font-size: 36px;
   }
 }
+
 @media only screen and (min-width: 480px) {
   .cd-fixed-bg {
     background-attachment: fixed;
   }
+
   .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 48px;
-    font-weight: 300;
+    font-size: 80px;
+    font-weight: 600;
   }
 }
 
@@ -165,9 +177,16 @@ a {
 @media only screen and (min-width: 480px) {
   .cd-scrolling-bg {
     padding: 8em 0;
-    font-size: 20px;
+    font-size: 30px;
     font-size: 1.25rem;
     line-height: 2;
     font-weight: 300;
   }
 }
+
+
+/* -----------------------------------
+.login{
+  position: absolute;
+  left: 50px;
+} */
