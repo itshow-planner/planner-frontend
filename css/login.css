@@ -46,6 +46,9 @@ li {
     font-size: 13px;
     color: black;  
 }
+#navbar{
+    height: 70px;
+  }
 
  #find{
      position: relative;

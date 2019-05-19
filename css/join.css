@@ -25,6 +25,10 @@ li {
     margin: 0px 5px 0px 5px;
 }
 
+#navbar{
+    height: 70px;
+  }
+
 /* joinform 위치 설정 */
 .joinform{
     position: relative;
