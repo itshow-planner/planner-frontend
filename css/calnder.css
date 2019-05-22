@@ -21,3 +21,8 @@ li {
 .nav-link {
     margin: 0px 5px 0px 5px;
 }
+
+#navbar{
+    background-color: rgba(255, 255, 255, 70%);
+    height: 70px;
+    }
