@@ -28,6 +28,17 @@
     cursor: pointer;
 }
 
+#toolbar{
+    position: fixed;
+    top: 100px;
+    right: 70px;
+    background-color: black;
+    width: 60px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
 #canvasToolBar{
     width: 30px;
     height: 300px;
@@ -113,24 +124,18 @@ textarea{
 
 .son2{
     position: absolute;
-    top: 50px;
-    left: 449px;
-}
-
-.son3{
-    position: absolute;
     top: 374px;
     left: 92px;
 }
 
-.son4{
+.son3{
     position: absolute;
     top: 20px;
     right: 30px;
 }
 
 #canvas{
-    width: 355px; 
+    width: 385px; 
     /* 최대 385px까지 */
     height: 300px;
     background-color: white;

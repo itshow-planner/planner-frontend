@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>memo list</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/memo.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="memoList">
+                <ul>
+                    <li>memo list1</li>
+                    <li>memo list2</li>
+                    <li>memo list3</li>
+                </ul>
+                <button id="addMemo">추가</button>
+                <img id="question" src="img/question.png" onmouseover="ShowExplain">
+            </div>
+            <div id="explain">추가 기능 설명</div>
+            <div id="memoPage">
+                <center>
+                    <div class="memo">
+                        <div>제목:&nbsp;</div>
+                        <textarea id="memo1_title" placeholder="제목을 입력해 주세요."></textarea>
+                        <textarea id="memo1_content" placeholder="내용을 입력해 주세요."></textarea>
+                    </div>
+                    <div class="memo">
+                        <div>제목:&nbsp;</div>
+                        <textarea id="memo2_title" placeholder="제목을 입력해 주세요."></textarea>
+                        <textarea id="memo2_content" placeholder="내용을 입력해 주세요."></textarea>
+                    </div>
+                    <br>
+                    <div class="memo" style="margin-left: -5px;">
+                        <div>제목:&nbsp;</div>
+                        <textarea id="memo3_title" placeholder="제목을 입력해 주세요."></textarea>
+                        <textarea id="memo3_content" placeholder="내용을 입력해 주세요."></textarea>
+                    </div>
+                    <div class="memo">
+                        <div>제목:&nbsp;</div>
+                        <textarea id="memo4_title" placeholder="제목을 입력해 주세요."></textarea>
+                        <textarea id="memo4_content" placeholder="내용을 입력해 주세요."></textarea>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <script src="js/memo.js"></script>
+    </body>
+</html>

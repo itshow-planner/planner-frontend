@@ -46,9 +46,6 @@ li {
     font-size: 13px;
     color: black;  
 }
-#navbar{
-    height: 70px;
-  }
 
  #find{
      position: relative;
@@ -66,7 +63,7 @@ li {
     top: 40%;
     left: 40%;
     width: 304px;
-    transform: translate(-200%, -80%);
+    transform: translate(-200%, -90%);
     font-size: 14px;
     color: black;
  }

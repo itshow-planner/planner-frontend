@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+}
+
+#memoList{
+    width: 15%;
+    height: 100%;
+    padding: 20px;
+    float: left;
+    background-color: rgb(189, 189, 189);
+}
+
+#memoList ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#question{
+    width: 50px;
+}
+
+#question:hover{
+   cursor: pointer;
+}
+
+#explain{
+    visibility: hidden;
+}
+
+#memoPage{
+    margin-left: 20%;
+    padding: 30px;
+}
+
+.memo{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-color: coral;
+}
+
+.memo textarea{
+    width: 200px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    resize: none;
+    overflow: hidden;
+    /* outline-style: none; */
+}
+
+.memo textarea[id$='title']{
+    display: inline;
+    display: block;
+    width: 162px;
+    height: 20px;
+}
+
+.memo textarea[id$='content']{
+    height: 180px;
+}
+
+.memo div{
+    display: inline;
+    color: white;
+    float: left;
+    font-size: 0.9em;
+}
