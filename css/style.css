@@ -1,8 +1,15 @@
 *, ::after, ::before {
     box-sizing: inherit;
     font-family: 'Nanum Gothic', sans-serif;
-    /* background-color: rgb(251, 253, 251); */
+    background-color: rgb(251, 253, 251);
 }
+
+.carousel img {
+    min-width: 100%;
+    height: 660px;
+    float: center;
+    margin-bottom: 50px;
+  }
   
 #footerHr{
     height: 80px;
@@ -38,161 +45,102 @@ li {
     margin: 0px 5px 0px 5px;
 }
 
-#navbar{
-  background-color: rgba(255, 255, 255, 70%);
-  height: 70px;
-}
-/*------------------------------------------------*/
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-body {
-  font-size: 100%;
-  font-family: "Roboto", sans-serif;
-  color: #3d3536;
-  background-color: white;
-}
 
-body, html {
-  /* important */
-  height: 100%;
-}
-a {
-  color: #a6989a;
-}
-.cd-container {
-  /* 이 클래스는 적용되는 요소에 최대 너비를 부여하고, 최대 너비에 도달할 때 수평으로 중심을 잡는데 사용된다. */
-  /* width: 90%; */
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto;
-}
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
 
-.cd-main-content {
-  /* 자식에게 메인 콘텐츠 최소 높이를 할당해야 한다.*/
-  height: 100%;
-  position: relative;
-  z-index: 1;
-}
 
-.cd-fixed-bg {/* 사진 관련된 부분을 정하는 곳 */
-  position: relative;
-  min-height: 100%; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 1;
-}
-.cd-fixed-bg h1, .cd-fixed-bg h2 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 1170px;
-  text-align: center;
-  font-size: 30px;
-  font-size: 1.875rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  color: white;
-}
-.cd-fixed-bg.cd-bg-1 {
-  background-image: url("../img/c1.jpg");
-}
 
-/* +++ 메인 사진 div */
-.cd-fixed-bg.cd-bg-1_1 {
-  background-image: url("../img/2.jpg");
-}
 
-.cd-fixed-bg.cd-bg-2 {
-  background-image: url("../img/c2.jpg");
-}
 
-.cd-fixed-bg.cd-bg-3 {
-  background-image: url("../img/c3.jpg");
-}
 
-.cd-fixed-bg.cd-bg-4 {
-  background-image: url("../img/2.jpg");
-}
 
-@media only screen and (min-width: 320px) {
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 36px;
+
+
+/* .cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
-}
-
-@media only screen and (min-width: 480px) {
-  .cd-fixed-bg {
+  
+  .cd-section--bg-fixed {
+    min-height: 100vh;
     background-attachment: fixed;
   }
-
-  .cd-fixed-bg h1, .cd-fixed-bg h2 {
-    font-size: 80px;
-    font-weight: 600;
+  
+  /* backgrounds */
+  /* .cd-section:nth-child(1) {
+    background-image: url("../img/1.jpg");
   }
-}
-
-.cd-scrolling-bg {
-  position: relative;
-  min-height: 50%;
-  padding: 4em 0;
-  line-height: 1.6;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-.cd-scrolling-bg.cd-color-1 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-.cd-scrolling-bg.cd-color-2 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-.cd-scrolling-bg.cd-color-3 {
-  background-color: #3d3536;
-  color: #a6989a;
-}
-@media only screen and (min-width: 480px) {
-  .cd-scrolling-bg {
-    padding: 8em 0;
-    font-size: 30px;
-    font-size: 1.25rem;
-    line-height: 2;
-    font-weight: 300;
+  
+  .cd-section:nth-child(2) {
+    background-color: var(--cd-color-2);
   }
-}
+  
+  .cd-section:nth-child(3) {
+    background-image: url("../img/2.jpg");
+  } */ 
 
 
-/* -----------------------------------
-.login{
-  position: absolute;
-  left: 50px;
-} */
 
-#login{
-  /* float: right; */
-  position: absolute;
-  right: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  html,body {
+    height: 100%;
+    margin: 0
+  }
+  
+  .hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden; 
+    /* added for pseudo-element */
+  }
+  
+    /* fixed-position background image */
+    ::before {
+      background-image: url("../img/2.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      will-change: transform;
+      z-index: -1;
+    }
+  
+  h1 {
+    color: white;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    background: white;
+    padding: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5em;
+  }
