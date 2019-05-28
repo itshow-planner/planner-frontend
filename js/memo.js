@@ -5,7 +5,7 @@ var index = 0;
 function init(){
     var add_memo = document.getElementById("addMemo");
     var question = document.getElementById("question");
-
+    
     add_memo.addEventListener("click", AddMemo, false);
     question.addEventListener("mouseover", ShowExplain, false);
 
@@ -27,6 +27,6 @@ function AddMemo(){
 
 function ShowExplain(){
     var explain = document.getElementById("explain");
-    explain.style.visibility = visible;
+    //explain.style.visibility = visible;
     alert("explain!");
 }
