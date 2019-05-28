@@ -36,7 +36,7 @@ li {
 #navbar{
 background-color: rgba(255, 255, 255, 70%);
 height: 70px;
-}
+} 
 /*------------------------------------------------*/
 html * {
 -webkit-font-smoothing: antialiased;
@@ -52,7 +52,15 @@ font-size: 100%;
 font-family: "Roboto", sans-serif;
 color: #3d3536;
 background-color: white;
+
 }
+
+/* 스크롤바 없앰 */
+body::-webkit-scrollbar { 
+display: none; 
+
+}
+
 body, html {
 height: 100%;
 }
@@ -105,13 +113,13 @@ font-size: 1.875rem;
 text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 color: white;
 }
-.cd-fixed-bg.cd-bg-1 {
-background-image: url("../img/c1.jpg");
-}
 
 /* +++ 메인 사진 div */
 .cd-fixed-bg.cd-bg-1_1 {
-background-image: url("../img/2.jpg");
+  background-image: url("../img/main.jpg");
+}
+.cd-fixed-bg.cd-bg-1 {
+background-image: url("../img/c1.jpg");
 }
 
 .cd-fixed-bg.cd-bg-2 {
