@@ -155,3 +155,7 @@ textarea{
     background-color: rgb(230, 203, 255);
     cursor: pointer;
 }
+
+#bArr{
+    visibility: hidden;
+}

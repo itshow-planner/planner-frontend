@@ -50,7 +50,7 @@ function init() {
     };
 
     var submit = document.getElementById("submit");
-    submit.addEventListener("click", ToImage, false);
+    submit.addEventListener("click", saveImage, false);
 }
 
 function ClickBrush(){
@@ -134,16 +134,20 @@ function OffEvent(){
 }
 
 
-function ToImage(){
-    if (canvas.getContext) {
-        // var canvasData = canvas.toDataURL("image/png");
-        // var ajax = new XMLHttpRequest();
-      
-        // ajax.open("POST", "testSave.php", false);
-        // ajax.onreadystatechange = function() {
-        //   console.log(ajax.responseText);
-        // }
-        // ajax.setRequestHeader("Content-Type", "application/upload");
-        // ajax.send("imgData=" + canvasData);      
-     }
-}
+function saveImage() {
+    var bArr = document.getElementById("bArr");
+    var data = canvas.toDataURL();
+    data = data.split(",");
+    const b64Data = data[1];
+    const byteCharacters = atob(b64Data);
+    
+    const byteNumbers = new Array(byteCharacters.length);
+    for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+    const byteArray = new Uint8Array(byteNumbers);
+
+    console.log(byteArray.toString());
+    bArr.value = byteArray;
+    // return byteArray;
+  }

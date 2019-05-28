@@ -2,19 +2,26 @@
     <head>
         <meta charset="utf-8">
         <title>example</title>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.ajax({
+                    type : "GET",
+                    url : "ajaxData.jsp?type=1",
+                    dataType : "text",
+                    error : function(){
+                        alert('통신실패!!');
+                    },
+                    success : function(data){
+                        alert("통신데이터 값 : " + data) ;
+                        $("#dataArea").html(data) ;
+                    }   
+                });
+            });
+        </script>
     </head>
     <body>
-        <table width="800" height="600" border="1" cellspacing="0">
-            <tr height="100">
-                <td>
-                    1
-                </td>	
-            </tr>
-            <tr>	
-                <td valign="top">
-                    2
-                </td>	
-            </tr>
-        </table>
+        <div id="dataArea"></div>
     </body>
 </html>
