@@ -1,47 +1,82 @@
 <html>
-    <head>
-        <title>memo list</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/memo.css">
-    </head>
-    <body>
-        <div id="container">
-            <div id="memoList">
-                <ul>
-                    <li>memo list1</li>
-                    <li>memo list2</li>
-                    <li>memo list3</li>
-                </ul>
-                <button id="addMemo">추가</button>
-                <img id="question" src="img/question.png" onmouseover="ShowExplain">
-            </div>
-            <div id="explain">추가 기능 설명</div>
-            <div id="memoPage">
-                <center>
-                    <div class="memo">
-                        <div>제목:&nbsp;</div>
-                        <textarea id="memo1_title" placeholder="제목을 입력해 주세요."></textarea>
-                        <textarea id="memo1_content" placeholder="내용을 입력해 주세요."></textarea>
-                    </div>
-                    <div class="memo">
-                        <div>제목:&nbsp;</div>
-                        <textarea id="memo2_title" placeholder="제목을 입력해 주세요."></textarea>
-                        <textarea id="memo2_content" placeholder="내용을 입력해 주세요."></textarea>
-                    </div>
-                    <br>
-                    <div class="memo" style="margin-left: -5px;">
-                        <div>제목:&nbsp;</div>
-                        <textarea id="memo3_title" placeholder="제목을 입력해 주세요."></textarea>
-                        <textarea id="memo3_content" placeholder="내용을 입력해 주세요."></textarea>
-                    </div>
-                    <div class="memo">
-                        <div>제목:&nbsp;</div>
-                        <textarea id="memo4_title" placeholder="제목을 입력해 주세요."></textarea>
-                        <textarea id="memo4_content" placeholder="내용을 입력해 주세요."></textarea>
-                    </div>
-                </center>
-            </div>
+
+<head>
+    <title>memo list</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/memo.css">
+    <link rel="stylesheet" href="css/use.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-bright" id="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo1.png" style="background: rgba(0, 0, 0, 0)">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#explainstart">EXPLAIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calnder.html">CALENDER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="addPicDiary.html">PICTURE DIARY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AddDiary.html">DIARY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="memoList.html">NOTEPAD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="login" href="login.html">LOGIN</a>
+                </li>
+            </ul>
         </div>
-        <script src="js/memo.js"></script>
-    </body>
+    </nav>
+    <div id="container">
+        <div id="memoList">
+            <ul>
+                <li>memo list1</li>
+                <li>memo list2</li>
+                <li>memo list3</li>
+            </ul>
+            <button id="addMemo">추가</button>
+            <img id="question" src="img/question.png" onmouseover="ShowExplain">
+        </div>
+        <div id="explain">추가 기능 설명</div>
+        <div id="memoPage">
+            <center>
+                <div class="memo">
+                    <div>제목:&nbsp;</div>
+                    <textarea id="memo1_title" placeholder="제목을 입력해 주세요."></textarea>
+                    <textarea id="memo1_content" placeholder="내용을 입력해 주세요."></textarea>
+                </div>
+                <div class="memo">
+                    <div>제목:&nbsp;</div>
+                    <textarea id="memo2_title" placeholder="제목을 입력해 주세요."></textarea>
+                    <textarea id="memo2_content" placeholder="내용을 입력해 주세요."></textarea>
+                </div>
+                <br>
+                <div class="memo" style="margin-left: -5px;">
+                    <div>제목:&nbsp;</div>
+                    <textarea id="memo3_title" placeholder="제목을 입력해 주세요."></textarea>
+                    <textarea id="memo3_content" placeholder="내용을 입력해 주세요."></textarea>
+                </div>
+                <div class="memo">
+                    <div>제목:&nbsp;</div>
+                    <textarea id="memo4_title" placeholder="제목을 입력해 주세요."></textarea>
+                    <textarea id="memo4_content" placeholder="내용을 입력해 주세요."></textarea>
+                </div>
+            </center>
+        </div>
+    </div>
+    <script src="js/memo.js"></script>
+</body>
+
 </html>

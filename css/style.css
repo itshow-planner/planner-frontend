@@ -1,22 +1,8 @@
 *, ::after, ::before {
   box-sizing: inherit;
   font-family: 'Nanum Gothic', sans-serif;
-  /* background-color: rgb(251, 253, 251); */
 }
 
-/* #footerHr{
-  height: 80px;
-  width: 0px;
-  border-right:1px solid rgb(255, 255, 255);
-}
-#footer {
-  clear: both;
-  background-color: rgb(86, 146, 104);
-  color: #ffffff;
-  text-align: center;
-  font-size: 13px;
-  font-style: initial;
-} */
 ul {
   list-style: none;
   margin: 0;
@@ -116,7 +102,7 @@ color: white;
 
 /* +++ 메인 사진 div */
 .cd-fixed-bg.cd-bg-1_1 {
-  background-image: url("../img/main.jpg");
+  background-image: url("../img/main.png");
 }
 .cd-fixed-bg.cd-bg-1 {
 background-image: url("../img/c1.jpg");
@@ -128,10 +114,6 @@ background-image: url("../img/c2.jpg");
 
 .cd-fixed-bg.cd-bg-3 {
 background-image: url("../img/c3.jpg");
-}
-
-.cd-fixed-bg.cd-bg-4 {
-background-image: url("../img/2.jpg");
 }
 
 @media only screen and (min-width: 320px) {
