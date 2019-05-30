@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>example</title>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.ajax({
+                    type : "GET",
+                    url : "ajaxData.jsp?type=1",
+                    dataType : "text",
+                    error : function(){
+                        alert('통신실패!!');
+                    },
+                    success : function(data){
+                        alert("통신데이터 값 : " + data) ;
+                        $("#dataArea").html(data) ;
+                    }   
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="dataArea"></div>
+    </body>
+</html>

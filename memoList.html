@@ -1,10 +1,21 @@
 <html>
-
 <head>
     <title>memo list</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/memo.css">
     <link rel="stylesheet" href="css/use.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;subset=korean" rel="stylesheet">
+    
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"crossorigin="anonymous"></script>
+    <script src="js/memojquery.js"></script>
+    
 </head>
 
 <body>
@@ -41,12 +52,14 @@
     </nav>
     <div id="container">
         <div id="memoList">
-            <ul>
-                <li>memo list1</li>
-                <li>memo list2</li>
-                <li>memo list3</li>
+            <ul id="list">
+                <li>안녕하세요</li>
+                <li>안녕하세요2</li>
+                <li>안녕하세요3</li>
+                <li>안녕하세요4</li>
             </ul>
             <button id="addMemo">추가</button>
+            <button id="addQuestion">질문 추가</button>
             <img id="question" src="img/question.png" onmouseover="ShowExplain">
         </div>
         <div id="explain">추가 기능 설명</div>

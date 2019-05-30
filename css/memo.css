@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+#container{
+    margin-top: 70px;
+}
+
 #memoList{
     width: 15%;
     height: 100%;
