@@ -26,7 +26,7 @@
 			
 			String[] parts = bArr.split(",");
 			String imageString = parts[1];
-			diary.setImage(PicDiaryDAO.encodeToString(PicDiaryDAO.decodeToImage(imageString), "jpg"));
+			diary.setImage(PicDiaryDAO.encodeToString(PicDiaryDAO.decodeToImage(imageString), "jpeg"));
 			
 			PicDiaryDAO.insert(diary);
 			String result[];

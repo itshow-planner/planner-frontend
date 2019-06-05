@@ -136,7 +136,6 @@ textarea{
 
 #canvas{
     width: 385px; 
-    /* 최대 385px까지 */
     height: 300px;
     background-color: white;
     border: 1px solid #ccc;

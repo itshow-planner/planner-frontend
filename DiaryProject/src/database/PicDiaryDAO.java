@@ -63,21 +63,6 @@ public class PicDiaryDAO {
 		        result[2] = rs.getString("image"); 
 	        	 
 	        }
-	         
-//	         Statement stmt = conn.createStatement();
-//				ResultSet rs = stmt.executeQuery("SELECT * FROM DIARYDB");
-//				if (rs.next()) {
-//					// 바이너리 데이터를 저장하고 있는 컬럼으로부터 데이터를 가져온다
-//					InputStream in = rs.getBinaryStream("bfile");
-//					// BufferedImage를 생성하면 ImageIO를 통해 브라우저에 출력하기가 쉽다.
-//					BufferedImage bimg = ImageIO.read(in);
-//					in.close();
-//
-//					ServletOutputStream sos = response.getOutputStream();
-//
-//					ImageIO.write(bimg, "jpeg", sos); 
-//				}
-	         
         	 
 	    } catch (Exception e) {
 	         e.printStackTrace();
@@ -93,16 +78,6 @@ public class PicDiaryDAO {
 	public static void insert(PicDiary diary) throws SQLException {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		
-//		byte[] binArr = diary.getImage();
-		
-//		ByteArrayOutputStream bout = new ByteArrayOutputStream();
-//		for(int i = 0; i < binArr.length; i++) {
-//			bout.write(binArr[i]);
-//		}
-//		
-//		byte[] imageData = bout.toByteArray();
-		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");	
 			conn = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
@@ -115,10 +90,10 @@ public class PicDiaryDAO {
 			System.out.println("success!");
 		} catch (Exception e) {
 		     e.printStackTrace();
-		} //finally {
-//		   if (pstmt != null) pstmt.close();
-////		   if (conn != null) conn.close();
-//		}
+		} finally {
+	    if (pstmt != null) pstmt.close();
+		   if (conn != null) conn.close();
+		}
 	}
 	
 	public static void update(PicDiary diary) throws SQLException {
