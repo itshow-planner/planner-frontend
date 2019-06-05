@@ -14,9 +14,9 @@ import sun.misc.BASE64Encoder;
 public class PicDiaryDAO {
 	
 	private static Connection conn; // connection:db에접근하게 해주는 객체
-	private static String DB_URL = "jdbc:mysql://localhost/daily_planet?characterEncoding=UTF-8&serverTimezone=UTC"; //접속할 DB 서버
+	private static String DB_URL = "jdbc:mysql://10.96.124.88:3306/daily_planet?characterEncoding=UTF-8&serverTimezone=UTC"; //접속할 DB 서버
 	private static String USER_NAME = "root"; //DB에 접속할 사용자 이름을 상수로 정의
-	private static String PASSWORD = "qkdcodus3!"; //사용자의 비밀번호를 상수로 정의
+	private static String PASSWORD = "1234"; //사용자의 비밀번호를 상수로 정의
 	
 	public static int count() throws SQLException{
 		PreparedStatement pstmt = null;

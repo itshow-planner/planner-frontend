@@ -26,7 +26,7 @@
             		result = PicDiaryDAO.select(i);
             		
            			%>
-            		<li><%= i + " : " + result[1] %></li>
+            		<li><%=result[1] %></li>
             		<%
             		
             	}

@@ -22,7 +22,7 @@
             		result = DiaryDAO.select(i);
             		
            			%>
-            		<li><%= i + " : " + result[5] %></li>
+            		<li><%=result[5] %></li>
             		<%
             		
             	}
