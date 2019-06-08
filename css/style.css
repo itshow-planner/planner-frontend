@@ -44,22 +44,23 @@ background-color: white;
 /* 스크롤바 없앰 */
 body::-webkit-scrollbar { 
 display: none; 
-
 }
 
 body, html {
 height: 100%;
 }
+
 a {
 color: #a6989a;
 }
+
+/* 남색-설명 글씨 설정 부분 */
 .cd-container {
-width: 90%;
-/* width: 90%; */
 width: 100%;
-max-width: 768px;
+max-width: 890px;
 margin: 0 auto;
 }
+
 .cd-container::after {
 /* clearfix */
 content: '';
@@ -96,7 +97,7 @@ max-width: 1170px;
 text-align: center;
 font-size: 30px;
 font-size: 1.875rem;
-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+text-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 color: white;
 }
 
@@ -142,15 +143,15 @@ box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 z-index: 2;
 }
 .cd-scrolling-bg.cd-color-1 {
-background-color: #3d3536;
+background-color: #17233d;
 color: #a6989a;
 }
 .cd-scrolling-bg.cd-color-2 {
-background-color: #3d3536;
+background-color: #17233d;
 color: #a6989a;
 }
 .cd-scrolling-bg.cd-color-3 {
-background-color: #3d3536;
+background-color: #17233d;
 color: #a6989a;
 }
 @media only screen and (min-width: 480px) {
