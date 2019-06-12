@@ -2,6 +2,12 @@
     margin: 0;
     font-family: 'Nanum Gothic', sans-serif;
 }
+/* 
+body{
+    background-image: url("../design/메모장/메모장\ 배경3.png");
+    width: 100%;
+    height: 100%;
+} */
 
 #container{
     margin-top: 70px;
