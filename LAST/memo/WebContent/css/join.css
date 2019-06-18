@@ -1,0 +1,166 @@
+*, ::after, ::before {
+    box-sizing: inherit;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    border-bottom: 1px solid rgba(189, 188, 188, 50%);
+}
+ 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 13px;
+    color: black;  
+}
+
+.nav-link {
+    margin: 0px 5px 0px 5px;
+}
+
+/* joinform �쐞移� �꽕�젙 */
+.joinform{
+    position: relative;
+    left: 36%;
+    margin-top: 10%;
+    /* width: 900px; */
+    /* transform: translate(35%,38%); */
+}
+
+.all{
+    color: rgb(70, 68, 68);
+    font-size: 17px;
+}
+span{
+    font-size: 30px;
+    position: absolute;
+    transform: translate(570%, 115%);
+    -webkit-text-stroke: 1.5px rgb(82, 82, 82);    
+}
+
+/* �뤌 - �씠由� */
+#userName{
+    width: 14%;
+    height: 35px;
+    margin: 0 0 0 6%;
+    margin-bottom: 1%; 
+    padding-left:5px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #aaa8a8;
+}
+
+#userID{
+    /* position: relative; */
+    width: 14%;
+    height: 35px;
+    margin: 0 0 0 5%;
+    margin-bottom: 1%; 
+    padding-left:5px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #aaa8a8;
+}
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
+    color: #aaa8a8;
+    font-size: 14.5px;
+    padding: 0 0 0 1px;
+  }
+
+  /* IE */
+  :-ms-input-placeholder { 
+    color: #aaa8a8;
+    font-size: 14.5px;
+  }
+
+  #userPassword{
+    /* position: relative; */
+    width: 14%;
+    height: 35px;
+    margin: 0 0 0 4.05%;
+    margin-bottom: 1%; 
+    padding-left:5px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #aaa8a8;
+  }
+
+  #userPasswordChecked{
+    width: 14%;
+    height: 35px;
+    margin: 0 0 0 1.5%;
+    margin-bottom: 1%; 
+    padding-left:5px;
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #aaa8a8;
+  }
+
+  #pwdcheckbtn{
+    position: relative;
+    height: 35px;
+    width: 80px;
+    border: 1px solid #d3d1d1;
+    background-color: #d3d1d1;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #636363;
+    margin: 3px;
+    /* transform: translate(600%, 30%); */
+  }
+
+  select{
+    -webkit-appearance: none;
+    width: 215px;
+    height: 35px;
+    padding-left: 0.5%;
+    margin: 0 0 0 3.2%;0.
+    color: #636363;
+    border-radius: 2px;
+    font-size: 17px; 
+  }
+  #userAnswer{
+    width: 14%;
+    height: 35px;
+    margin: 1% 0 0 8.4%;
+    padding-left:5px; 
+    margin-bottom: 1%; 
+    background-color: white;
+    border-radius: 2px;
+    border: 1px solid #aaa8a8;
+  }
+
+  #resetbtn{
+    width: 170px;
+    height: 70px;
+    background-color: #3f3e3e;
+    border: 1px solid #3f3e3e;
+    border-radius: 5px;
+    color: white;
+    padding: 11px 26px;
+    margin: 10px 0px 0px 0px;
+  }
+
+  #joinbtn{
+    width: 170px;
+    height: 70px;
+    background-color: #3f3e3e;
+    border: 1px solid #3f3e3e;
+    border-radius: 5px;
+    color: white;
+    padding: 11px 26px;
+    margin: 10px 0px 0px 0px;
+  }
+body::-webkit-scrollbar { 
+    display: none; 
+    }

@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#container{
+    margin-top: 50px;
+	}
+
+#memoPage{
+    margin-left: 18%;
+    padding: 25px;
+}
+
+.memo{
+	margin-top : 10px;
+	margin-right : 10px;
+    width: 380px;
+    height: 320px;
+    display: inline-block;
+    background-color: rgb(189, 189, 189);
+    border-radius: 5px;
+}
+
+.memo textarea{
+    width: 250px;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    resize: none;
+    overflow: hidden;
+
+    /* outline-style: none; */
+}
+
+.memo textarea[id$='title']{
+    display: inline;
+    display: block;
+    width: 200px;
+    height: 25px;
+    margin-top: 15px;
+    
+}
+
+.memo textarea[id$='content']{
+	margin : 15px;
+    height: 250px;
+    
+}
+
+.memo div{
+    display: inline;
+    color: white;
+    float: left;
+    font-size: 0.9em;
+}
+
+#addMemo{
+    width: 180px;
+    height: 45px;
+    border: 1px solid #3f3e3e;
+    border-radius: 4px;
+    background-color: #3f3e3e;
+    color: white;
+}
+
+
+
+#addMemo:hover{
+    width: 180px;
+    height: 39px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: #3f3e3e;
+}
+
+#addQuestion:hover{
+    width: 180px;
+    height: 39px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: white;
+    color: #3f3e3e;
+    margin-top: 5px;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+    }

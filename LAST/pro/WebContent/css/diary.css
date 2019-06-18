@@ -1,0 +1,259 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+}
+
+.container{
+    margin-top: 100px;
+    text-align: center;
+    width: 70%;
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+#diaryList{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#diaryList li{
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+#diaryList li:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#contentPage{
+    position: fixed;
+    top: 100px;
+    right: 70px;
+    width: 100px;
+    height: 120px;
+    padding: 15px;
+    
+}
+
+#contentList{
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#listTitle{
+    text-align: center;
+}
+
+#contentList li{
+    cursor: pointer;
+    color: white;
+}
+
+#contentList li:hover{
+    background-color: gray;
+}
+
+#addDiary{
+    right: 10%;
+    bottom: 10%;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+}
+
+#addDiary:hover{
+    cursor: pointer;
+}
+
+#diaryArea{
+    width: 440px;
+    height: 550px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 1px solid rgb(240, 239, 239);
+    border-radius: 2px;
+    padding: 8px;
+} 
+
+#diarySpeArea{
+    width: 440px;
+    height: 94px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 1px solid rgb(240, 239, 239);
+    border-radius: 2px;
+    line-height: 31px;
+    padding: 8px;
+} 
+
+.parent{
+    position: relative;
+    width: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.son1{
+    position: absolute;
+    top: 60px;
+    left: 52px;
+}
+
+.son2{
+    position: absolute;
+    top: 90px;
+    left: 52px;
+}
+
+.son3{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.son4{
+    position: absolute;
+    top: 210px;
+    left: 52px;
+}
+
+.son5{
+    position: absolute;
+    top: 240px;
+    left: 52px;
+}
+
+.son6{
+    position: absolute;
+    top: 360px;
+    left: 52px;
+}
+
+.son7{
+    position: absolute;
+    top: 390px;
+    left: 52px;
+}
+
+.son8{
+    position: absolute;
+    top: 510px;
+    left: 52px;
+}
+
+.son9{
+    position: absolute;
+    top: 540px;
+    left: 52px;
+}
+
+#btnList{
+	position: absolute;
+	top: 640px;
+    right: 22px;
+}
+
+#btnList input[type="button"]{
+	border: 0;
+	background-color: #e3f2fc;
+	color: black;
+}
+
+#btnList input[type="button"]:hover{
+    cursor: pointer;
+	background-color: #ccebff;
+}
+
+#addImg{
+    width: 530px;
+    z-index: -1;
+}
+
+.guide{
+	margin-left: -20px;
+	resize: none;
+    outline: none;
+    overflow: hidden;
+    border: 0;
+    background-color: transparent;
+}
+
+#index{
+	visibility: hidden; 
+}
+
+#submit{
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 350px;
+    height: 30px;
+    border: none;
+    background-color: #e3f2fc;
+}
+
+#submit:hover{
+    background-color: #ccebff;
+    cursor: pointer;
+}
+
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 32px;
+    /*--Set height of tabs--*/
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    right: -120px;
+}
+ul.tabs li {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    height: 31px;
+    line-height: 31px;
+    border-left: none; 
+    overflow: hidden;
+    position: relative;
+    background: #d8d8d8;
+}
+ul.tabs li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-size: 1.2em;
+    padding: 0 20px;
+    /*--Gives the bevel look with a 1px white border inside the list item--*/
+    outline: none;
+}
+ul.tabs li a:hover {
+    background: #fff;
+}
+html ul.tabs li.active,
+html ul.tabs li.active a:hover {
+    background: #ccc;
+    /*--Makes the active tab look like it's connected with its content--*/
+}
+/*Tab Conent CSS*/
+.tab_container {
+    border-top: none;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.tab_content {
+    padding: 20px;
+    font-size: 1.2em;
+}

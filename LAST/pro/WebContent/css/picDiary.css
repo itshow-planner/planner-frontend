@@ -1,0 +1,187 @@
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+}
+
+#index{
+	visibility: hidden;
+}
+
+.container{
+    float: left;
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+    margin-top: 100px;
+    text-align: center;
+    width: 65%;
+    display: table; 
+    /* margin-left: -3%;  */
+}
+
+#diaryList{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#diaryList li{
+    height: 50px;
+    line-height: 50px;
+    
+}
+
+#diaryList li:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#sideMenu{
+    float: right;
+    margin-top: 100px;
+    text-align: center;
+    width: 25%;
+    display: table; 
+    margin-right: 10%;
+    /* border: 1px solid red;
+    box-sizing: border-box; */
+}
+
+#toolBar{
+    width: 85%;
+    height: 60px;
+    border-radius: 30px;
+    background-color: white;
+    list-style-type: none;
+}
+
+#toolBar li{
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#brush, #eraser, #plus, #minus{
+    margin-top: 10px;
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #e3f2fc;
+    border-radius: 50%;
+    background-color: #e3f2fc;
+    box-sizing: border-box;
+}
+
+#submit{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: #e3f2fc;
+}
+
+#submit:hover{
+    background-color: #ccebff;
+    cursor: pointer;
+}
+
+#plus:hover, #minus:hover{
+    background-color: #f00;
+}
+
+#color{
+    margin-top: 12px;
+    width: 25px;
+    height: 30px;
+}
+
+#addDiary{
+    right: 10%;
+    bottom: 10%;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+}
+
+#addDiary:hover{
+    cursor: pointer;
+}
+
+#user_img{
+    width: 385px; 
+    height: 300px;
+}
+
+#addImg{
+    width: 550px;
+    z-index: -1;
+}
+
+textarea{
+    width: 435px;
+    height: 280px;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.7); 
+    border: 1px solid rgb(240, 239, 239);
+    border-radius: 2px;
+    /* box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); */
+    padding: 8px;
+} 
+
+.parent{
+    position: relative;
+    width: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.son1{
+    position: absolute;
+    top: 50px;
+    left: 52px;
+}
+
+.son2{
+    position: absolute;
+    top: 374px;
+    left: 52px;
+}
+
+.son3{
+    position: absolute;
+    top: 20px;
+    right: -30px;
+}
+
+#btnList{
+	position: absolute;
+	top: 674px;
+    right: 22px;
+}
+
+#btnList input[type="button"]{
+	border: 0;
+	background-color: #e3f2fc;
+	color: black;
+}
+
+#btnList input[type="button"]:hover{
+    cursor: pointer;
+	background-color: #ccebff;
+}
+
+#canvas{
+    width: 450px; 
+    height: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+#bArr{
+    visibility: hidden; 
+}
+
+#date{
+    width: 100px;
+	background-color: transparent;
+	border: 0;
+}
